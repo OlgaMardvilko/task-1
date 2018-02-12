@@ -74,7 +74,7 @@ main p, footer p {
   background-repeat: no-repeat;
   background-color: #082841;
   background-size: cover;
-  background-position-x: right;
+  background-position-x: 55%;
 }
 
 .developer__photo__fon {
@@ -530,6 +530,24 @@ input[type='text'] {
   MEDIA QUERIES
 \*------------------------------------*/
 
+@media only screen and (max-width: 1280px){
+  
+  header, footer {
+    max-width: 1280px;
+  }
+
+  .developer, .developer__info {
+    height: 768px;
+  }
+
+ .developer__photo {
+    margin-top: -768px;
+    height: 768px;
+  }
+
+}
+
+/*
 @media only screen and (max-width: 1024px){
   
   header, footer {
@@ -542,6 +560,8 @@ input[type='text'] {
 
  .developer__photo {
     margin-top: -768px;
+    height: 768px;
   }
 
-}
+}*/
+
