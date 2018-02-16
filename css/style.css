@@ -532,6 +532,11 @@ input[type='text'] {
 }
 
 
+.expectation > input {
+  display: none;
+}
+
+
 /*------------------------------------*\
   MEDIA QUERIES
 \*------------------------------------*/
@@ -554,12 +559,45 @@ input[type='text'] {
 }
 
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 980px){
   
   header, footer {
-    max-width: 1024px;
+    max-width: 980px;
   }
 
+  .wrapper {
+    width: 92%;
+    /*padding:0 32px;*/
+  }
+
+  .developer__info {
+    color: #fff;
+    width: 92%;
+  }
+
+  .slider__wrapper {
+    width: 444px;
+  }  
+
+  .portfolio figcaption {
+    width: 30%;
+    margin-left: 20px;
+  }
+
+  .custom-file-upload {
+    margin-right: 56%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 768px){
+  
+  /*header, footer {
+    max-width: 1024px;
+  }
+*/
   .wrapper {
     width: 92%;
     /*padding:0 32px;*/
@@ -633,7 +671,36 @@ input[type='text'] {
     flex-flow: row;
     margin-bottom: 20px;
   }
-
+/*
+  .slide1 { background-image: url(../img/lyvs-1.jpg); }
+  .slide2 { background-image: url(../img/lyvs-2.jpg); }
+  .slide3 { background-image: url(../img/lyvs-3.jpg); }
+  .slide4 { background-image: url(../img/lyvs-4.jpg); }
+  .slide5 { background-image: url(../img/lyvs-5.jpg); }
+  .slide6 { background-image: url(../img/cardiology-1.jpg); }
+  .slide7 { background-image: url(../img/cardiology-2.jpg); }
+  .slide8 { background-image: url(../img/cardiology-3.jpg); }
+  .slide9 { background-image: url(../img/cardiology-4.jpg); }
+  .slide10 { background-image: url(../img/cardiology-5.jpg); }
+  .slide11 { background-image: url(../img/shumat-1.jpg); }
+  .slide12 { background-image: url(../img/shumat-2.jpg); }
+  .slide13 { background-image: url(../img/shumat-3.jpg); }
+  .slide14 { background-image: url(../img/shumat-4.jpg); }
+  .slide15 { background-image: url(../img/el-sbmt-1.jpg); }
+  .slide16 { background-image: url(../img/el-sbmt-2.jpg); }
+  .slide17 { background-image: url(../img/el-sbmt-3.jpg); }
+  .slide18 { background-image: url(../img/el-sbmt-4.jpg); }
+  .slide19 { background-image: url(../img/enemies-game-1.jpg); }
+  .slide20 { background-image: url(../img/enemies-game-2.jpg); }
+  .slide21 { background-image: url(../img/enemies-game-3.jpg); }
+  .slide22 { background-image: url(../img/enemies-game-4.jpg); }
+  .slide23 { background-image: url(../img/flexbox-1.jpg); }
+  .slide24 { background-image: url(../img/flexbox-2.jpg); }
+  .slide25 { background-image: url(../img/flexbox-3.jpg); }
+  .slide26 { background-image: url(../img/okonremont-1.jpg); }
+  .slide27 { background-image: url(../img/okonremont-2.jpg); }
+  .slide28 { background-image: url(../img/okonremont-3.jpg); }
+*/
   .slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8,
   .slide9, .slide10, .slide11, .slide12, .slide13, .slide14, .slide15, 
   .slide16, .slide17, .slide18, .slide19, .slide20, .slide21, .slide22, 
@@ -656,7 +723,7 @@ input[type='text'] {
   }
 
   .slider__wrapper label {
-    margin: 24px 12px;
+    margin: 24px 8px;
   }
   
   .controls.odd {
@@ -718,7 +785,7 @@ input[type='text'] {
     -ms-hyphens: auto;
     word-break: break-all;
   }
-
+  
 }
 /*
 @media only screen and (max-width: 768px){
@@ -756,17 +823,16 @@ input[type='text'] {
     height: 144px;
     margin: -660px auto 0;
   }
-/*
-  .developer__photo {
-    width: 240px;
-    height: 240px;
-  }*/
-   
+
+  .custom-file-upload {
+    margin-right: 86%;
+  }
+
 
 }
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 640px){
 
   .developer, .developer__info {
     height: 848px;
@@ -787,7 +853,7 @@ input[type='text'] {
   }
 
   .expectation_view {
-    width: 304px;
+    width: 100%;
     height: 304px;
   }
 
@@ -796,9 +862,9 @@ input[type='text'] {
   .expectation__view--item.three, 
   .expectation__view--item.four {
     height: 256px;
-    width: 100%;
-    padding: 24px;
-    width: 256px;
+    width: 77%;
+   /* padding: 24px;*/
+   /* width: 256px;*/
     margin-right: 0px;
     margin-bottom: 0px;
     opacity: 0;
@@ -876,7 +942,7 @@ input[type='text'] {
   width: 50%;
   margin: 0 auto;
   justify-content: space-around;
-  margin-top: 24px;
+  margin-top: 44px;
 }
 
   .expectation__view--item {
@@ -906,8 +972,11 @@ input[type='text'] {
 
   .controls.odd, .controls.even {
     left: 25%;
-    width: 60%;
-    margin-top: 16px;
+    display: inline-flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 24px;
   }
 
   .portfolio figcaption {
@@ -931,7 +1000,7 @@ input[type='text'] {
   }
 
   .custom-file-upload {
-    margin-right: 144px;
+    margin-right: 56%;
   }
 
   .footer h2 {
@@ -951,6 +1020,10 @@ input[type='text'] {
 
   .footer {
     padding-bottom: 73px;
+  }
+
+  .portfolio figcaption {
+     margin-left: 0px; 
   }
 
 }
